@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var num1=10;//number variable..by using var keyword we can use and before and after initialization of the variable
+        console.log(num1);
+        document.write(num1);
+        let num2=30;//let is a block scoped variable..by using let keyword we can use the variable only after initialization
+        console.log(num2);
+        const num3=50;
+        console.log(num3);
+        num1=1000;
+        console.log(num1);//not chaning value for const variable,it will declare and as well as initialize only once
+        var num1=200;//by using var we can reinitialize the variable and also redeclare the variable at any time
+        console.log(num1);
+        var num1=300;//to overcome this issue we can use let keyword
+        console.log(num1);
+
+        {
+            let x=10;
+
+            console.log(x);
+        }
+        
+        
+        //console.log(x);//it will give error because let is a block scoped variable
+        {
+            var y=900000;
+            console.log(y);
+        }
+        console.log(y);//it will not give error because var is a function scoped variable   
+        
+        </script>
+</body>
+</html>
