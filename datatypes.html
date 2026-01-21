@@ -10,11 +10,65 @@
         var x=10;//number datatype
         console.log(x);
         console.log(typeof x);//to check datatype of variable
-        console.log(typeof typeof x);//typeof always returns string datatype
+        //console.log(typeof typeof x);//typeof always returns string datatype
         console.log(typeof (x));//to check datatype of variable
         var x=10.5;//float datatype
         console.log(typeof (x));
-        
+        var y="XYZ";//string datatype
+        console.log(typeof (y));
+        var y="123";//string datatype even though it contains only numbers
+        console.log(typeof (y));
+        var y="__&^%$#@!";//string datatype even though it contains special characters
+        console.log(typeof (y));
+        var z=true;//boolean datatype
+        console.log(typeof (z));    
+        var z=false;//boolean datatype
+        console.log(typeof (z));
+        //var a;//undefined datatype
+        console.log(typeof (a));
+        console.log(typeof string);
+        console.log(typeof number);
+        console.log(typeof boolean);
+        var b=null;//object datatype
+        console.log(typeof (b));
+        var c=undefined;//undefined datatype
+        console.log(typeof (c));
+
+        var d=BigInt("123456789012345678901234567890");//bigint datatype
+        console.log(typeof (d));
+        var e=Symbol("my symbol");//symbol datatype
+        console.log(typeof (e));
+
+        var name=["apple","banana","grapes"];//object datatype(array)
+        console.log(typeof (name));
+        console.log(name[0]);//accessing array element
+        console.log(name[1]);//accessing array element
+        console.log(name[2]);//accessing array element
+        console.log(name.length);//to check length of array
+        console.log(name);
+
+        var name2=["apple",123,true,10.5];//object datatype(mixed array)
+        console.log(name2);
+
+        var stu={
+            id:101,
+            name:"john",
+            age:22
+
+        }
+
+        var details=[
+            {id:201, name:"alice", age:23},
+            {id:202, name:"bob", age:24},
+            {id:203, name:"charlie", age:25},
+            {id:204, name:"david", age:26},
+            {id:205, name:"eve", age:27}
+        ]
+        console.log(details);
+        console.log(typeof (stu));//object datatype(object)
+        console.log(stu);
+
+
     </script>
 </body>
 </html>
